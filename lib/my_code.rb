@@ -14,9 +14,8 @@ def reduce (source, init = nil)
     next_i = source.shift
   end
 
-  val = yield(next_i, source.shift)
-  while next_i = source.shift
-    val = yield(val, next_i)
+  while val = yield(next_i, source.shift)
+    next_i = source.shift
   end
   val
 
