@@ -9,5 +9,6 @@ end
 
 def reduce (source, init = nil)
   val = nil
-  next_i = init if init 
-end 
+  next_i = init if init
+  val = yield(next_i, source.shift)
+end
