@@ -18,5 +18,6 @@ def reduce (source, init = nil)
   while next_i = source.shift
     val = yield(val, next_i)
   end
-  val
+  val = yield(val, source.last)
+
 end
