@@ -8,7 +8,6 @@ def map arr
 end
 
 def reduce (source, init = nil)
-  val = nil
   if init 
     next_i = init 
   else
