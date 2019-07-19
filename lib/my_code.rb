@@ -14,6 +14,7 @@ def reduce (source, init = nil)
   else
     a, b, i = source[0],source[1], 2
   end
+  puts a,b,i
   val = yield(a, b)
   while i < len
     val = yield(val,source[i])
