@@ -8,8 +8,8 @@ def map arr
 end
 
 def reduce (source, init = nil)
-  if init 
-    next_i = init 
+  if init
+    next_i = init
   else
     next_i = source.shift
   end
@@ -18,6 +18,6 @@ def reduce (source, init = nil)
   while next_i = source.shift
     val = yield(val, next_i)
   end
-  val = yield(val, source.last)
+  #val = yield(val, source.last)
 
 end
