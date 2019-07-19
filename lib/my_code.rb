@@ -20,5 +20,5 @@ def reduce (source, init = nil)
     val = yield(val,source[i])
     i += 1
   end
-  puts val
+  val 
 end
