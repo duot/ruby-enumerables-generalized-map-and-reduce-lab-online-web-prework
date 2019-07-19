@@ -9,10 +9,17 @@ end
 
 def reduce (source, init = nil)
   val = nil
-  if !init 
+  if !init
     a, b = source.shift(2)
   else
     a, b = init, source.shift
   end
   val = yield(a, b)
+
+  #recur
+  if source
+    reduce source, val
+  else
+    return val
+  end
 end
