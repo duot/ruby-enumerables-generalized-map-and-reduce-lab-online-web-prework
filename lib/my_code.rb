@@ -9,7 +9,5 @@ end
 
 def reduce (source, init = nil)
   val = nil
-  if init 
-    next_e = init 
-  end
+  next_i = init if init 
 end 
