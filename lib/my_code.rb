@@ -4,4 +4,5 @@ def map arr
   arr.each_with_index do |item, index|
      new_arr.push (yield(arr[index]))
    end
+  new_arr
 end
