@@ -14,5 +14,5 @@ def reduce (source, init = nil)
   else
     a, b = [init, source.shift]
   end
-  
+  val = yield(a, b)
 end
