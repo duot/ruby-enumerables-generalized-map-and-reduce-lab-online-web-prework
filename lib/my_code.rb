@@ -16,6 +16,7 @@ def reduce (source, init = nil)
   end
   val = yield(a, b)
   while i < len
-
+    val = yield(val,source[i])
+    i += 1
   end
 end
