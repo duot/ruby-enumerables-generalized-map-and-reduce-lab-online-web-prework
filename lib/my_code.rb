@@ -1,4 +1,4 @@
 # Your Code Here
-def map arr
+def my_own_map arr
   yield
 end
