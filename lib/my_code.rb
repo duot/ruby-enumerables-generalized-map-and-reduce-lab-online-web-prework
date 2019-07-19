@@ -12,7 +12,7 @@ def reduce (source, init = nil)
   if init
     a, b, i = init, source[0], 0
   else
-    a, b, i = source[0],source[1], 1
+    a, b, i = source[0],source[1], 2
   end
   val = yield(a, b)
   while i <= len
