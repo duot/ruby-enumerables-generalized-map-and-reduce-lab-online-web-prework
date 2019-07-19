@@ -9,19 +9,7 @@ end
 
 def reduce (source, init = nil)
   val = nil
-  if !init
-    a, b = source.shift(2)
-  else
-    a, b = init, source.shift
+  if init 
+    next_e = init 
   end
-  val = yield(a, b)
-
-  #does recursion work with yield?
-  =begin
-  if source
-    reduce(source, val) yield
-  else
-    return val
-  end
-  =end
-end
+end 
