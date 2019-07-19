@@ -8,7 +8,6 @@ def map arr
 end
 
 def reduce (source, init = nil)
-  len = source.size
   if init
     a, b, i = init, source[0], 1
   else
@@ -16,10 +15,10 @@ def reduce (source, init = nil)
   end
 
   val = yield(a, b)
-  while i < len
+  while i < source.size
     val = yield(val,source[i])
     i += 1
   end
 
-  return val 
+  return val
 end
