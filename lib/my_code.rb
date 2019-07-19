@@ -8,3 +8,5 @@ def map arr
 end
 
 def reduce (starting_point = nil)
+
+end
