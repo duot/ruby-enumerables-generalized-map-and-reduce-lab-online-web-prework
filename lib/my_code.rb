@@ -13,8 +13,10 @@ def reduce (source, init = nil)
   else
     next_i = source.shift
   end
-
-  while val = yield(next_i, source.shift)
+  val = yield(next_i, source.shift)
+  next_i = source.shift
+  while next_i
+    val = yield(val, next_i)
     next_i = source.shift
   end
   val
