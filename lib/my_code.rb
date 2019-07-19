@@ -18,7 +18,7 @@ def reduce (source, init = nil)
 
   #recur
   if source
-    reduce(source, val) yield
+    reduce(source, val) 
   else
     return val
   end
