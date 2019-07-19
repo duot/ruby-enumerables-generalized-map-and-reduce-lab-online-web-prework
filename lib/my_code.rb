@@ -7,6 +7,12 @@ def map arr
   new_arr
 end
 
-def reduce (init = nil)
+def reduce (source, init = nil)
   val = nil
+  if !init 
+    a, b = source.shift(2)
+  else
+    a, b = [init, source.shift]
+  end
+  
 end
