@@ -14,11 +14,11 @@ def reduce (source, init = nil)
   else
     a, b, i = source[0],source[1], 2
   end
-  
+
   val = yield(a, b)
-  puts i, val
   while i < len
     val = yield(val,source[i])
     i += 1
   end
+  puts val
 end
