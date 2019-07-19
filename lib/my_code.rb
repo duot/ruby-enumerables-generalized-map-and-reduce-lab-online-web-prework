@@ -10,7 +10,7 @@ end
 def reduce (source, init = nil)
   len = source.size
   if init
-    a, b, i = init, source[0], 0
+    a, b, i = init, source[0], 1
   else
     a, b, i = source[0],source[1], 2
   end
