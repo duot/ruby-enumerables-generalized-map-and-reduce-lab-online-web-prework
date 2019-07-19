@@ -8,17 +8,14 @@ def map arr
 end
 
 def reduce (source, init = nil)
+  len = source.size
   if init
-    next_i = init
+    a, b, = init, source[0]
   else
-    next_i = source.shift
+    a, b, i = source[0],source[1], 1
   end
-  val = yield(next_i, source.shift)
-  next_i = source.shift
-  while next_i
-    val = yield(val, next_i)
-    next_i = source.shift
-  end
-  val
+  val = yield(a, b)
+  while i < len
 
+  end
 end
