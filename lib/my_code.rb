@@ -9,7 +9,7 @@ end
 
 def reduce (source, init = nil)
   val = nil
-  next_i = init if init
+  next_i = init if init end
 
   val = yield(next_i, source.shift
   while next_i = source.shift
