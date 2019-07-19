@@ -16,10 +16,12 @@ def reduce (source, init = nil)
   end
   val = yield(a, b)
 
-  #recur
+  #does recursion work with yield?
+  =begin
   if source
     reduce(source, val) yield
   else
     return val
   end
+  =end
 end
