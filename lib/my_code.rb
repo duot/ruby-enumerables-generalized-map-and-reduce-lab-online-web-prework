@@ -12,7 +12,7 @@ def reduce (source, init = nil)
   if !init 
     a, b = source.shift(2)
   else
-    a, b = [init, source.shift]
+    a, b = init, source.shift
   end
   val = yield(a, b)
 end
