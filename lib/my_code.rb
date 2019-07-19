@@ -18,6 +18,5 @@ def reduce (source, init = nil)
   while i <= len
     val = yield(val,source[i])
     i += 1
-    
   end
 end
