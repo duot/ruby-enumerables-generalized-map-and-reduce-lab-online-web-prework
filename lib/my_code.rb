@@ -1,6 +1,5 @@
 # Your Code Here
 def map arr
-  arr.each yield
-  return  [-1, -2, -3, 9]
+  arr.each_with_index yield (arr[index])
 
 end
