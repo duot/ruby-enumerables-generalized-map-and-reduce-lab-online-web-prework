@@ -7,6 +7,6 @@ def map arr
   new_arr
 end
 
-def reduce (starting_point = nil)
+def reduce (init = nil)
   val = nil
 end
